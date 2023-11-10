@@ -1,7 +1,7 @@
 :root {
   --blue: #12d2db;
   --white: #fcf2fa;
-  --purple: #912a7eaa;
+  --gold: #C79358;
   --purple-blc: #230622dd;
   --shadow: 0 5px 10px 5px rgba(0, 0, 0, .3);
   --navColor: linear-gradient(to right, rgba(178, 47, 147, .6)5%, rgba(35, 6, 64, .9));
@@ -61,7 +61,7 @@ nav ul li a {
   text-transform: uppercase;
 }
 a.active, a:hover {
-  background: var(--purple);
+  background: var(--gold);
   transition: .5s;
 }
 .checkbtn {
@@ -126,9 +126,12 @@ section {
   margin: 5px;
  
 }
+.info {
+  color: var(--gold);
+}
 .bio {
   display:inline-block;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 300;
   padding-top: 10px;
  
@@ -196,5 +199,13 @@ a.active, a:hover{
 }
 #check:checked ~ ul {
   left: 0;
+}
+}
+@media only screen and (max-width: 500px) {
+.name {
+  width:100%;
+}
+.avatar {
+  width: 100%;
 }
 }
